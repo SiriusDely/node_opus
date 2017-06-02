@@ -1,5 +1,6 @@
 // hello.js
 //const addon = require('./build/Release/addon');
+/*
 var addon;
 
 try {
@@ -7,5 +8,10 @@ try {
 } catch (err) {
   addon = require('./build/Debug/addon.node');
 }
+*/
 
-console.log(addon.hello()); // 'world'
+const addon = require('bindings')('addon')  
+
+//console.log(addon.hello()); // 'world'
+
+console.log(addon.whoami())  

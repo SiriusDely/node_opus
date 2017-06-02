@@ -47,7 +47,8 @@ INCS_Debug := \
 	-I/Users/sirius/.node-gyp/6.9.1/include/node \
 	-I/Users/sirius/.node-gyp/6.9.1/src \
 	-I/Users/sirius/.node-gyp/6.9.1/deps/uv/include \
-	-I/Users/sirius/.node-gyp/6.9.1/deps/v8/include
+	-I/Users/sirius/.node-gyp/6.9.1/deps/v8/include \
+	-I$(srcdir)/node_modules/nan
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
@@ -92,7 +93,8 @@ INCS_Release := \
 	-I/Users/sirius/.node-gyp/6.9.1/include/node \
 	-I/Users/sirius/.node-gyp/6.9.1/src \
 	-I/Users/sirius/.node-gyp/6.9.1/deps/uv/include \
-	-I/Users/sirius/.node-gyp/6.9.1/deps/v8/include
+	-I/Users/sirius/.node-gyp/6.9.1/deps/v8/include \
+	-I$(srcdir)/node_modules/nan
 
 OBJS := \
 	$(obj).target/$(TARGET)/hello.o

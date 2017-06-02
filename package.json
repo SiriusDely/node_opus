@@ -20,5 +20,9 @@
     "xiph"
   ],
   "author": "Sirius Dely",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "1.2.1",
+    "nan": "2.6.2"
+  }
 }
