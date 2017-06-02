@@ -14,4 +14,10 @@ const addon = require('bindings')('addon')
 
 //console.log(addon.hello()); // 'world'
 
-console.log(addon.whoami())  
+//console.log(addon.whoami());
+
+console.log(`native addon whoami: ${addon.WhoAmI()}`);
+
+for (let i = 0; i < 6; i++) {
+  console.log(`native addon increment: ${addon.Increment(i)}`);
+}
