@@ -4,7 +4,7 @@
   "description": "Node Opus",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,35 @@
     "decoder",
     "xiph"
   ],
-  "author": "Sirius Dely",
-  "license": "ISC",
+  "author": "Sirius Dely <siriusmdely@gmail.com>",
+  "license": "MIT",
+  "//": "Platform limitations is due to lack of config.h files. See README.md for more information.",
+  "os": [
+    "linux",
+    "darwin",
+    "win32",
+    "freebsd"
+  ],
+  "cpu": [
+    "x64",
+    "arm",
+    "ia32"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
-    "bindings": "1.2.1",
-    "nan": "2.6.2"
+    "bindings": "~1.2.1",
+    "commander": "^2.9.0",
+    "nan": "^2.3.2"
+  },
+  "optionalDependencies": {
+    "ogg-packet": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "ogg": "^1.2.5",
+    "stream-equal": "^1.0.0"
   }
 }

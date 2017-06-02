@@ -146,3 +146,19 @@ dkms.conf
 *.exe
 *.out
 *.app
+
+### Misc
+
+*.swp
+/build
+/deps/build
+*.pcm
+node_modules/
+.vscode
+/coverage
+/test/data/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
